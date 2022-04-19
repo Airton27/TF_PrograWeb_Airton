@@ -21,8 +21,34 @@
 				<p:column headerText="Nombres">
 					<h:outputText value="#{pe.nombreEmpresa}" />
 				</p:column>
-				
+				<p:column headerText="Ruc">
+					<h:outputText value="#{pe.ruc}" />
+				</p:column>
 
+				<p:column headerText="Sede">
+					<h:outputText value="#{pe.sedeEmpresa}" />
+				</p:column>
+
+				<p:column headerText="Telefono">
+					<h:outputText value="#{pe.telefonoEmpresa}" />
+				</p:column>
+
+				<p:column headerText="Direccion">
+					<h:outputText value="#{pe.direccionEmpresa}" />
+				</p:column>
+
+				<p:column headerText="Correo">
+					<h:outputText value="#{pe.correoEmpresa}" />
+				</p:column>
+
+				<p:column headerText="Clave">
+					<h:outputText value="#{pe.claveEmpresa}" />
+				</p:column>
+
+				<p:column headerText="Operacion">
+					<h:commandLink action="listaPersonas" value="Eliminar"
+						actionListener="#{empresaController.delete(pe)}" />
+				</p:column>
 			</p:dataTable>
 		</h:form>
 	</ui:define>
